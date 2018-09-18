@@ -48,13 +48,20 @@ def pull_up_string_form():
     nextButton.click()
     time.sleep(2)
 
-    nextButton2 = browser.find_element_by_xpath('//*[text()[contains(.,"Real Estate")]]')
-    nextButton2.click()
-    time.sleep(2)
-
+    #The automatic suggestion of kijiji may suggest an extra "Real Estate"
     nextButton3 = browser.find_element_by_xpath('//*[text()[contains(.,"House Rental")]]')
-    nextButton3.click()
-    time.sleep(2)
+    if nextButton3:
+        nextButton3.click()
+        time.sleep(2)
+    else:
+        
+        nextButton2 = browser.find_element_by_xpath('//*[text()[contains(.,"Real Estate")]]')
+        nextButton2.click()
+        time.sleep(2)
+        nextButton4 = browser.find_element_by_xpath('//*[text()[contains(.,"House Rental")]]')
+        nextButton4.click()
+        time.sleep(2)
+
  
 # this is for fill out the online form for the room
 def fill_out_string_form():
