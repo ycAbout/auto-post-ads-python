@@ -1,9 +1,9 @@
 # auto-post-ads-python
 Auto post ads using Selenium WebDriver python package, using real estate and kijiji as a example.
 
-# Author: Corey Chen (corey.about@gmail.com)
+Author: Corey Chen (corey.about@gmail.com)
 
-# Note. This is only for academic demonstration purpose. Use it in a good way.
+Note. This is only for academic demonstration purpose. Use it in a good way.
 
 # Usage:
 
